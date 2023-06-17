@@ -1,0 +1,435 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    /* font-family: 'Almendra SC', serif; */
+/* font-family: 'Bruno Ace SC', cursive; */
+/* font-family: 'Maven Pro', sans-serif; */
+/* font-family: 'Sulphur Point', sans-serif; */
+/* font-family: 'Telex', sans-serif; */
+font-family: 'Tsukimi Rounded', sans-serif;
+}
+/* ************ header-stying *********** */
+.header{
+    /* color:red; */
+    background: linear-gradient(rgba(9,9,9,0.1),rgba(9,9,9,0.1)),url('../images/bg3.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto; 
+}
+.line {
+    border-color: brown;
+    /* width: 100%; */
+}
+.navbar .logo{
+    font-size: 3.9rem;
+    color:brown;
+    margin-top: 1rem;
+    float:right;
+}
+.navbar .navbar-items{
+    float:left;
+    margin-top: 1rem;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.navbar .navbar-item{
+    display: inline-block;
+    padding: 1rem;
+}
+ul li{
+    list-style: none;
+    color: red;
+    letter-spacing: 1px;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    display: inline-block;
+    color: red;
+ 
+}
+.navbar a:link, .navbar a:visited{
+    color:#9e4a4a;
+}
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+.navbar a:hover{
+    border-bottom: 1px solid red;
+}
+a,h1{
+    /* list-style:armenian; */
+    margin-bottom: 0.5em;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+.line-bca-1{
+    margin-left:35%;
+    margin-right: 35%;
+    
+}
+.container-1{
+    background-color: #dddd;
+    padding-bottom: 2%;
+    margin-top: 20px;
+    border-radius:20px;
+}
+.section{
+    padding-bottom: 2%;
+}
+/* .heading-ul{
+    border:2px solid red;
+} */
+.heading-ul-list{
+    /* border:2px solid blue; */
+    margin-top: 3%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color:brown;
+    margin-left: 5%;
+    list-style: circle;
+    font-size: 3.9rem;
+}
+/* .subheading-ul{
+    border:2px solid black;
+} */
+.subheading-ul-list{
+    border-bottom:2px solid brown;
+    border-style: groove;
+    background: #aaaa;
+    text-transform: uppercase;
+    font-family: math;
+    margin-left: 28%;
+    margin-right: 4%;
+    padding-left: 1%;
+    font-size: 2.9rem;
+    margin-top: 2%;
+    color:brown;
+    list-style-type: square;
+}
+
+.btn-d{
+    margin-left: 40%;
+    margin-top:4%;
+    margin-bottom: 3%;
+    /* background-color: red; */
+}
+.btn-v{
+    margin-left: 20%;
+}
+.btn-down{
+    width: 100%;
+    padding: 15px 30px;
+    font-family: 'Almendra SC';
+    letter-spacing: 0.5px;
+    margin-bottom: 2.2%;
+    margin-top: 5.5%;
+    background-color: #9e4a4a;
+    border-radius: 10%;
+    font-weight: 750;
+}
+.btn-vid{
+    width: 100%;
+    padding: 16px 38px;
+    font-weight: 750;
+    letter-spacing: 0.5px;
+    font-family: 'Almendra SC';
+    border-radius: 10%;
+    background-color: #9e4a4a;
+}
+.btn-down:hover{
+    background-color: brown;
+}
+.btn-vid:hover{
+    background-color: brown;
+}
+.section .container h1{
+    text-align: center;
+    font-size: 3.9rem;
+    color:brown;
+
+}
+.section .container h1:hover{
+    color:red;
+}
+/* **************footer******************* */
+.footer{
+    /* margin-top: 2%; */
+    background-color: rgba(42, 25, 25, 0.903);
+    color:#f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+p{
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+}
+
+.span2{
+    color:red;
+    font-family: 'Almendra SC', serif;
+}
+.span1{
+    color:blue;
+    font-family: 'Almendra SC', serif;
+}
+.line-OMT,.line-maths,.line-en,.line-phy,.line-co{
+    margin-top: 15px;
+}
+.footer div{
+    margin:-2rem;
+}
+.footer div i{
+    margin:12px;
+}
+.footer-btn{
+    color:#fff;
+}
+
+
+/* ******************* animation work */
+.social-medial-links i{
+    transition: transform 500ms ease-in-out;
+}
+.social-medial-links i:hover{
+    transform: scale(1.3);
+    color: brown;
+}
+ .container-1{
+    transition: transform 300ms ease-in-out;
+}
+.container-1:hover{
+    transform: scale(1.0009);
+}
+.subheading-ul-list,.heading-ul-list,.logo,.navbar-item{
+    transition: transform 500ms ease-in-out;
+}
+.subheading-ul-list:hover{
+    transform: scale(1.05);
+}
+.heading-ul-list:hover{
+    transform: rotate(1deg);
+}
+.navbar-item:hover{
+    transform: scale(1.05);
+}
+.logo:hover{
+    transform: scale(1.5);
+}
+.section .main-heading-bca{
+    margin-top: 2%;
+    transition: transorm 300ms ease-in-out;
+    transform: scale(1.05);
+}
+.line-nav,.line-OMT,.line-en,.line-co{
+    animation-name: line-r-l;
+    animation-delay: 5s;
+    animation-duration: 8500ms;
+    animation-fill-mode: forwards; 
+    /* transform: rotate(180deg); */
+ }
+
+
+@keyframes line-r-l{
+    15%{
+        width: 15%;
+        border-color: blue;
+    }
+    30%{
+        width: 30%;
+        border-color: yellow;
+    }
+    45%{
+        width: 45%;
+        border-color: green;
+    }
+    60%{
+        width: 60%;
+    }
+    75%{
+        width: 75%;
+        border-color: red;
+    }
+    100%{
+        width: 100%;
+        border-color: brown;
+    }
+}
+.line-maths,.line-phy{
+    animation-name: line-l-r;
+    animation-delay: 3s;
+    animation-duration: 5500ms;
+    animation-fill-mode: backwards;
+}
+@keyframes line-l-r{
+    100%{
+        width: 15%;
+        border-color: brown;
+    }
+    30%{
+        width: 75%;
+        border-color: yellow;
+    }
+    45%{
+        width: 60%;
+        border-color: green;
+    }
+    60%{
+        width: 45%;
+    }
+    75%{
+        width: 30%;
+        border-color: red;
+    }
+    15%{
+        width: 100%;
+        border-color: blue;
+    }
+}
+.btn-down,.btn-vid{
+    transition: transform 300ms ease-in-out;
+}
+.btn-down:hover{
+    transform: rotate(360deg);
+}
+.btn-vid:hover{
+    transform: rotate(360deg);
+} 
+
+
+/* ******************************* media query part************************ */
+/* ***************** header************** */
+@media(max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .navbar-items,.navbar .logo{
+        float:none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .section .container h1{
+        font-size: 20px;
+    }
+    .heading-ul-list{
+        font-size: 15px;
+        margin-left: 10%;
+    }
+    .subheading-ul-list{
+        font-size: 12px;
+        margin-right: 3%;
+
+    }
+    /* new */
+    .btn-down{
+        margin-top: 25%;
+        padding: 6px 10px;
+        margin-bottom: 24%;
+        font-size: 80%;
+    }
+    .btn-vid{
+        margin-top: 2%;
+        /* margin-right: 80%; */
+        /* margin-left:35%; */
+        padding:6px 18px;
+        margin-bottom: 28%;
+        font-size: 80%;
+    }
+    .btn-d{
+        /* margin-left: 25%; */
+        margin-top:3.5%;
+        margin-bottom: 3%;
+        /* background-color: red; */
+    }
+    .btn-v{
+        margin-left: 5%;
+    }
+    .social-medial-links .fa-3x {
+        font-size: 2.5em;
+    }
+}  
+
+@media(min-width:501px) and (max-width:768px){
+    
+    html{
+        font-size: 50%;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    
+    .section .container h1{
+        font-size: 20px;
+    }
+    .section .container{
+        padding-top: 0.1px;
+    }
+    .heading-ul-list{
+        font-size: 15px;
+        margin-left: 10%;
+    }
+    .subheading-ul-list{
+        font-size: 15px;
+    }
+    /* new */
+    .btn-down{
+        margin-top: 20%;
+        font-family: 'Almendra SC';
+        letter-spacing: 1px;
+        padding: 6px 10px;
+        margin-bottom: 20%;
+        font-size: 80%;
+    }
+    .btn-vid{
+        font-family: 'Almendra SC';
+        letter-spacing: 1px;
+        padding: 8px 24px;
+        margin-bottom: 28%;
+        font-size: 60%;
+    }
+    .btn-d{
+        margin-left: 40%;
+        margin-top:3.5%;
+        margin-bottom: 3%;
+        /* background-color: red; */
+    }
+    .btn-v{
+        margin-left: 20%;
+    }
+    }
+@media(min-width:769px) and (max-width:1200px){
+    html{
+        font-size: 52.25%;
+    }
+    .btn-down{
+        margin-top: 17%;
+        margin-left: 10%;
+        padding: 14px 24px;
+        margin-bottom: 17%;
+    }
+    .btn-vid{
+        padding: 14px 34px;
+    }
+    
+}
+/* @media (orientation:landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+} */
