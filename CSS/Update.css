@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(90deg, #ffd640 70%,white 5%);
+    justify-content: space-around;
+}
+.update{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    background-image: url(../images/come2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 155px;
+}
+.update2{
+    background-color: white;
+}
+.update2 p,h1{
+    font-size: 1.9rem;
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Almendra SC', serif;
+}
+.update2 p{
+    margin-top: 50%;
+}
