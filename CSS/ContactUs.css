@@ -9,11 +9,6 @@ html {
 }
 
 body{
-    /* font-family: 'Almendra SC', serif; */
-/* font-family: 'Bruno Ace SC', cursive; */
-/* font-family: 'Maven Pro', sans-serif; */
-/* font-family: 'Sulphur Point', sans-serif; */
-/* font-family: 'Telex', sans-serif; */
 font-family: 'Tsukimi Rounded', sans-serif;
 }
 /* ************ header-stying *********** */
@@ -94,8 +89,6 @@ a {
 /* section styling ******************** */
 .contact-form{
         padding: 5rem 0;
-        /* border: 2px solid red; */
-        /* background: #f4f4f4; */
 }
 .form-wrapper::after{
     content: '';
@@ -122,6 +115,10 @@ a {
 .form-wrapper .address-group{
     margin-bottom: 3rem;
 }
+.form-wrapper .address-group i{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
 .contact-form .container-1 .form-wrapper .company-address img{
     max-width: 90%;
     height: 65%;
@@ -133,7 +130,6 @@ a {
 .form-wrapper .form{
     height: 660px;
     background: #ffff;
-    /* border: 2px solid red; */
     font-size: 1.6rem;
     width: 45%;
     float:right;
@@ -147,10 +143,6 @@ a {
 .form h1::after{
     content: '';
     display: block;
-    /* margin-left: 5rem; */
-    /* letter-spacing: 5px; */
-    /* text-align: center; */
-    /* border: 2px solid brown; */
     width: 100%;
 }
 .form .line{
@@ -167,6 +159,10 @@ a {
 .form-wrapper .form .form-group{
     margin-bottom: 1.5rem;
 }
+.form-wrapper .form .form-group i{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
 .form-wrapper .form label::after{
     content: '* ';
     color:red;
@@ -175,6 +171,8 @@ a {
     max-width: 100%;
     max-height: 250px;
     padding: 1rem;
+    width: 100%;
+    resize: none;
 }
 .form-btn{
     display: block;
@@ -186,6 +184,18 @@ a {
     outline: none;
     border: none;
     cursor: pointer;
+}
+.form-btn:hover{
+    background-color: #ab6363;
+    color: white;
+}
+#feedback{
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    margin-top: 2rem;
+    text-align: center;
+    transform: rotate(90%);
 }
 /* **************footer******************* */
 .footer {
@@ -227,7 +237,6 @@ p {
     color: brown;
     transform: scale(1.3);
 }
-
 /* ******************* animation work */
 .form,.company-address,.container-1{
     transition: transform 200ms ease-in-out;
@@ -255,7 +264,6 @@ p {
     animation-delay: 3s; 
      animation-duration: 6500ms;
     animation-fill-mode: forwards;
-    /* transform: rotate(180deg); */
 }
 @keyframes line-r-l{
     15%{
@@ -360,13 +368,6 @@ p {
     p{
         font-size: 1.5rem;
     }
-    /* .navbar .navbar-items ,
-    .navbar .logo{
-        float:none;
-        display: block;
-        width: 100%;
-        text-align: center;
-    } */
     .row{
         height: auto;
         width: 100%;
@@ -382,8 +383,7 @@ p {
         margin-bottom: 12%;
     }
     .cta-banner-left,.cta-banner-right{
-        /* float:none; */
-        /* box-shadow: none; */
+
         width: 100%;
         text-align: center;
     }
@@ -423,7 +423,6 @@ p {
         font-weight: 500;   
     }
     .btn-secondary{
-        /* border: 2px solid red; */
         margin-top: 6%;
         margin-bottom: 10px;
     }
@@ -434,7 +433,6 @@ p {
     }
     .cta-banner{
         margin-top: 25%;
-        /* box-shadow: none; */
     }
     .container-1{
         box-shadow: 5px 5px 10px brown;
