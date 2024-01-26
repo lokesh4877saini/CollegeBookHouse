@@ -38,43 +38,44 @@
             <div class="form-wrapper">
                 <div class="company-address">
                     <div class="address-group">
+                        <i class="fa-solid fa-location-dot"></i> 
                         <h2 class="md-heading">Loction</h2>
-                        <p>#2661 Jaipur,Rajasthan</p>
+                        <p>Jaipur,Rajasthan</p>
                     </div>
                     <div class="address-group">
-                        <h2 class="md-heading">Email</h2>
-                        <p>College-Book-House@gmail.com</p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <h2 class="md-heading">E-mail</h2>
+                        <p>lokesh80saini@gmail.com</p>
                     </div>
                     <div class="address-group">
+                        <i class="fa-solid fa-phone"></i>
                         <h2 class="md-heading">call</h2>
-                        <p>+91-xxxxxxxxxx</p>
+                        <p>+91-6376971316</p>
                     </div>
                     <img src="./images/home7.jpg" alt="">
                 </div>
-                <form action="" class="form">
+                <form  class="form"  name="submit-to-google-sheet">
                     <h1>Contact Us</h1>
                     <hr class="line">
                     <p>S.S. Jain subodh college of global excellence</p>
                     <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" name="" id="username" required>
-                    </div>
-                    <div class="form-group">
                         <label for="Email">Email</label>
-                        <input type="text" name="" id="Email" required>
-
-                    </div>
+                        <input type="text" id="Email" name="Email" required>
+                     </div>
                     <div class="form-group">
                         <label for="phone">Phone</label>
-                        <input type="text" name="" id="phone" required>
+                        <input type="text" id="phone" name="Phone" required> 
 
                     </div>
                     <div class="form-group">
                         <label for="message">message</label>
-                        <textarea name="" id="message" cols="30" rows="10"></textarea>
-
+                        <textarea name="text" id="message" cols="50" rows="10" required></textarea>
                     </div>
-                    <button type="submit" class="form-btn">Submit</button>
+                    <div class="form-group">
+
+                        <button type="submit"  class="form-btn"><i class="fa-solid fa-paper-plane"></i>Send</button>
+                    </div>
+                        <p id="feedback"></p>
                 </form>
             </div>
         </div>
@@ -84,12 +85,29 @@
             <a href="https://www.facebook.com/profile.php?id=100068019325515" target="_blank" class="footer-btn"><i class="fab fa-facebook fa-3x"></i></a>
             <a href="https://twitter.com/LokeshSain4877?t=BI9PufrE9weYQOIpsf86fg&s=09"  target="_blank"  class="footer-btn"><i class="fab fa-twitter fa-3x"></i></a>
             <a href="https://instagram.com/lokesh_saini4877?igshid=NGExMmI2YTkyZg=="  target="_blank"  class="footer-btn"><i class="fa-brands fa-instagram fa-3x"></i></a>
-            <a href="#" class="footer-btn"><i class="fa-brands fa-github fa-3x"></i></a>
+            <a href="https://github.com/lokesh4877saini" class="footer-btn"  target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
             <p>CbH &copy; 2023, all Rights Reserved</p>
             <p> only for <span class="span1">S.S. Jain subodh college of global excellence </span></p>
             <p> <span class="span2">BCA Students</span></p>
         </div>
     </footer>
+    <script>  
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyJw_oGVnMOpaO7JQl9y21oBcMyN-VInMiAlgpQWnPBfOXfQbOpGTqG1haycAh_WtexMg/exec';
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('feedback');
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Thanks!";
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 4000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
 </body>
 
 </html>
