@@ -114,6 +114,7 @@ a {
 }
 .form-wrapper .address-group{
     margin-bottom: 2rem;
+   margin-left: 1rem;
 }
 .form-wrapper .address-group i{
     font-size: 2rem;
@@ -195,7 +196,6 @@ a {
     color: green;
     margin-top: 2rem;
     text-align: center;
-    transform: rotate(90%);
 }
 /* **************footer******************* */
 .footer {
