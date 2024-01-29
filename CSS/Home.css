@@ -406,6 +406,8 @@ ul li a{
 }
 .btn-list:hover::before{
     content: '📥';
+    font-size: 1.53rem;
+    margin-right: 0.5rem;
 }
 /* ******************************* media query part************************ */
 /* ***************** header************** */
